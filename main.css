@@ -111,7 +111,7 @@ a {
 }
 
 .about:hover .about-dropup {
-    height: 20rem;
+    opacity: 1;
     border: 1px solid gray;
 }
 
@@ -123,11 +123,12 @@ a {
 
 .about-dropup {
     width: 15rem;
-    height: 0;
+    height: 20rem;
     background-color: white;
     position: absolute;
     margin-top: 2rem;
-    transition: height .5s ease-out;
+    opacity: 0;
+    transition: opacity .5s ease-out;
    
    
 }
@@ -159,9 +160,10 @@ a {
 
 .level:hover .about-dropup-list{
     visibility: visible;
+    
 }
 .level:hover .level-dropup{
-    height: 12rem;
+    opacity: 1;
     border: 1px solid gray;
 }
 
@@ -175,11 +177,12 @@ a {
 
 .level-dropup {
     width: 15rem;
-    height: 0;
+    height: 12rem;
     background-color: white;
     position: absolute;
     margin-top: 2rem;
-    transition: height .5s ease-out;
+    opacity: 0;
+    transition: opacity .5s ease-out;
 }
 
 .arrow-dropup {
@@ -205,22 +208,23 @@ a {
     visibility: visible;
 }
 .shop:hover .shop-dropup{
-    height: 8rem;
     border: 1px solid gray;
+    opacity: 1;
 }
 
 .shop-dropup {
     width: 15rem;
-    height: 0;
+    height: 8rem;
     background-color: white;
     position: absolute;
     margin-top: 2rem;
-    transition: height .5s ease-out;
+    opacity: 0;
+    transition: all .5s ease-out;
 }
 .header-bg {
     width: 100%;
     height: 90%;
-    background-image: url(steve-halama--rIY3FTk1M8-unsplash.jpg);
+    background-image: url(https://images.unsplash.com/photo-1554320666-c12ac6076837?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
